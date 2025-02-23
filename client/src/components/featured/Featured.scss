@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+
+
+
+.featured {
+  background: linear-gradient(135deg, rgba($primary, 0.05), rgba($secondary, 0.05));
+  padding: $spacing-3xl 0;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: $spacing-2xl;
+
+    .left {
+      flex: 1;
+
+      h1 {
+        font-family: $font-heading;
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: $spacing-xl;
+        
+        span {
+          background: linear-gradient(135deg, $primary, $secondary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .search {
+        background: $white;
+        border-radius: $radius-full;
+        padding: $spacing-xs;
+        box-shadow: $shadow-lg;
+        display: flex;
+        align-items: center;
+        
+        .searchInput {
+          flex: 1;
+          padding: $spacing-sm $spacing-lg;
+          
+          input {
+            width: 100%;
+            font-size: 1.125rem;
+            border: none;
+            outline: none;
+            
+            &::placeholder {
+              color: rgba($dark, 0.5);
+            }
+          }
+        }
+
+        button {
+          background: linear-gradient(135deg, $primary, $secondary);
+          color: $white;
+          padding: $spacing-md $spacing-xl;
+          border-radius: $radius-full;
+          font-weight: 600;
+          transition: $transition-base;
+          
+          &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba($primary, 0.25);
+          }
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          width: max-content;
+        }
+
+        button {
+          width: max-content;
+          color: white;
+          border: 1px solid white;
+          padding: 5px 10px;
+          border-radius: 20px;
+          background-color: transparent;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-lg;
+      }
+    }
+  }
+}

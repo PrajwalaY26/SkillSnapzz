@@ -1,0 +1,55 @@
+// 🎨 Color Palette - Vibrant & Modern
+$primary: #2563eb;      // Modern Blue
+$secondary: #4f46e5;    // Deep Purple
+$accent: #f59e0b;       // Warm Orange
+$success: #10b981;      // Fresh Green
+$warning: #fbbf24;      // Soft Yellow (New)
+$error: #ef4444;        // Bright Red
+$info: #3b82f6;         // Soft Blue (New)
+$dark: #111827;         // Rich Black
+$light: #f8fafc;        // Cool Gray
+$white: #ffffff;
+$black: #000000;
+
+// 🖋️ Typography - Readability & Aesthetics
+$font-primary: 'Inter', sans-serif;
+$font-heading: 'Plus Jakarta Sans', sans-serif;
+$font-monospace: 'Fira Code', monospace;  // (New) Great for code-related elements
+
+// 📏 Spacing - Consistent Layout Scaling
+$spacing-xxs: 0.125rem;  // (New) Ultra-small
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 6rem;      // (New) Extra-large spacing for sections
+
+// 🖍️ Border Radius - Smooth & Modern UI
+$radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1rem;
+$radius-xl: 1.5rem;      // (New) Extra-large rounding
+$radius-full: 9999px;    // Fully rounded (for pills & buttons)
+
+// 🌟 Shadows - Depth & Elevation
+$shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);   // (New) Softest shadow
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.15); // (New) Deeper shadow for modals
+
+// 🎬 Transitions - Smooth User Experience
+$transition-fast: all 0.2s ease-in-out;  // (New) Quick animations
+$transition-base: all 0.3s ease;
+$transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);  // (New) Bouncy feel
+
+// 🖥️ Breakpoints - Responsive Design
+$breakpoint-xs: 480px;   // Mobile
+$breakpoint-sm: 768px;   // Tablet
+$breakpoint-md: 1024px;  // Small Laptop
+$breakpoint-lg: 1280px;  // Large Laptop
+$breakpoint-xl: 1440px;  // Desktop

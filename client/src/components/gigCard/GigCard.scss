@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+
+
+.gigCard {
+  background: $white;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .info {
+    padding: $spacing-lg;
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: $spacing-sm;
+      margin-bottom: $spacing-md;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: $radius-full;
+        border: 2px solid $primary;
+      }
+
+      span {
+        font-weight: 500;
+        color: $dark;
+      }
+    }
+
+    p {
+      color: rgba($dark, 0.7);
+      line-height: 1.5;
+      margin-bottom: $spacing-md;
+    }
+
+    .star {
+      display: flex;
+      align-items: center;
+      gap: $spacing-xs;
+      color: $accent;
+    }
+  }
+
+  .detail {
+    padding: $spacing-md $spacing-lg;
+    border-top: 1px solid rgba($dark, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .price {
+      span {
+        font-size: 0.875rem;
+        color: rgba($dark, 0.6);
+      }
+
+      h2 {
+        font-family: $font-heading;
+        color: $primary;
+        font-weight: 700;
+      }
+    }
+  }
+}

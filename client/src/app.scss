@@ -1,0 +1,106 @@
+// Global styles
+@import 'styles/variables';
+* {
+  .link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  color: $dark;
+  line-height: 1.6;
+  background: $light;
+  margin: 0;
+  padding: 0;
+}
+
+// 🎨 Button styles with better interaction
+.button {
+  background: linear-gradient(135deg, $primary, $secondary);
+  color: $white;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $radius-full;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba($primary, 0.3);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &.secondary {
+    background: $white;
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+      background: rgba($primary, 0.1);
+    }
+  }
+}
+
+// ✨ Modern input styles
+.input {
+  width: 100%;
+  padding: $spacing-md;
+  border: 2px solid rgba($dark, 0.15);
+  border-radius: $radius-md;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 4px rgba($primary, 0.15);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: rgba($dark, 0.5);
+  }
+}
+
+// 📦 Modern card styles
+.card {
+  background: $white;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  padding: $spacing-md;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// 🖥️ Responsive adjustments
+@media (max-width: 768px) {
+  .button {
+    padding: $spacing-sm $spacing-md;
+    font-size: 14px;
+  }
+
+  .input {
+    padding: $spacing-sm;
+  }
+
+  .card {
+    padding: $spacing-sm;
+  }
+}
